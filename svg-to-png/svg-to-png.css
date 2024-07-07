@@ -1,0 +1,192 @@
+ html, body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+body {
+    height: 100vh;
+    padding: 0.25em 0.45em;
+    margin: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    font-family: Arial;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+table {
+    border-collapse: collapse;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 1rem;
+    font-family: Arial;
+}
+.table {
+    width: 75vw;
+    max-width: calc(75vw - 2.75rem);
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+th {
+    text-align: inherit;
+}
+.table-bordered td, .table-bordered th {
+    border: 1px solid #dee2e6;
+}
+.table td, .table th {
+    padding: 0.25rem;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+}
+.table-bordered thead td,
+.table-bordered thead th {
+    border-bottom-width: 2px;
+}
+.table thead th {
+    vertical-align: middle;
+    border-bottom: 2px solid #dee2e6;
+}
+input[type=file] {
+  display:none;
+}
+.button {
+    display: inline-block;
+    align-self: center;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: calc(0.0rem + 6.5px) calc(0.375rem + 6px);
+    font-size: small;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+}
+.button:hover {
+    color: #212529;
+}
+.button-check:focus + .button,
+.button:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.button.disabled,
+.button:disabled,
+fieldset:disabled .button {
+    pointer-events:none;
+    opacity: 0.65;
+}
+.button-outline-info {
+    color: #0dcaf0;
+    border-color: #0dcaf0;
+}
+.button-outline-info:hover {
+    color: #000;
+    background-color: #0dcaf0;
+    border-color: #0dcaf0;
+}
+.button-check:focus + .button-outline-info,
+.button-outline-info:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 202, 240, 0.5);
+}
+.button-check:active + .button-outline-info,
+.button-check:checked + .button-outline-info,
+.button-outline-info.active,
+.button-outline-info.dropdown-toggle.show,
+.button-outline-info:active {
+    color: #000;
+    background-color: #0dcaf0;
+    border-color: #0dcaf0;
+}
+.button-check:active + .button-outline-info:focus,
+.button-check:checked + .button-outline-info:focus,
+.button-outline-info.active:focus,
+.button-outline-info.dropdown-toggle.show:focus,
+.button-outline-info:active:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 202, 240, 0.5);
+}
+.button-outline-info.disabled,
+.button-outline-info:disabled {
+  color: #0dcaf0;
+  background-color: transparent;
+}
+.button-outline-dark {
+  color: #212529;
+  border-color: #212529;
+}
+.button-outline-dark:hover {
+  color: #fff;
+  background-color: #212529;
+  border-color: #212529;
+}
+.button-check:focus + .button-outline-dark,
+.button-outline-dark:focus {
+  box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.5);
+}
+.button-check:active + .button-outline-dark,
+.button-check:checked + .button-outline-dark,
+.button-outline-dark.active,
+.button-outline-dark.dropdown-toggle.show,
+.button-outline-dark:active {
+  color: #fff;
+  background-color: #212529;
+  border-color: #212529;
+}
+.button-check:active + .button-outline-dark:focus,
+.button-check:checked + .button-outline-dark:focus,
+.button-outline-dark.active:focus,
+.button-outline-dark.dropdown-toggle.show:focus,
+.button-outline-dark:active:focus {
+  box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.5);
+}
+.button-outline-dark.disabled,
+.button-outline-dark:disabled {
+  color: #212529;
+  background-color: transparent;
+}
+
+#preview_window {
+    border: 1px dashed #6c757d;
+    margin: 0 auto;
+    padding: 0;
+    height: 400px !important;
+    width: 400px !important;
+}
+
+svg {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+#download_name {
+    width: 30%;
+}
+
+#ext {
+    position: relative;
+    padding-top: 2pt;
+    left: -2px;
+    font-family: Arial;
+    font-size: 10pt;
+    color: #444
+}

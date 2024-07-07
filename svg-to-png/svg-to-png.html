@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en' class='notranslate' translate='no'>
+    <head>
+        <link rel="stylesheet" href="./svg-to-png.css">
+    </head>
+    <body>
+        <table class='table table-bordered'>
+            <thead>
+                <tr>
+                    <th>
+                        <button id='upload_button' type='button' class='button button-outline-dark'>Select SVG File
+                            <input id='upload_file_input' type='file' accept='.svg'/>
+                        </button>
+                    </th>
+                    <td align='center'>
+                        <div id='preview_window'></div>
+                        <small>(preview)</small>
+                    </td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th width='50%'>File Name</th>
+                    <td><span id='file_name'>---</span></td>
+                </tr>
+                <tr>
+                    <th>File Type</th>
+                    <td><span id='file_type'>---</span></td>
+                </tr>
+                <tr>
+                    <th>File Dimensions</th>
+                    <td><span id='file_dimensions'>---</span></td>
+                </tr>
+            </tbody>
+
+            <thead>
+                <tr>
+                    <th>Download</th>
+                    <td><span id='download_link'>---</span></td>
+                </tr>
+                <tr>
+                    <th>Preferred Download Name</th>
+                    <td>
+                        <input id="download_name" placeholder="logo_1">
+                        <label id="ext">.png</label>
+                    </td>
+                </tr>
+            </thead>
+        </table>
+
+        <script type="text/javascript" src="../js/svg-to-png.js"></script>
+    </body>
+</html>
